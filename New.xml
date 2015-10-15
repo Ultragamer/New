@@ -8,6 +8,7 @@
     </value>
     <statement name="DO">
       <block type="controls_if" id="54" inline="false">
+        <mutation elseif="1" else="1"></mutation>
         <value name="IF0">
           <block type="logic_compare" id="75" inline="true">
             <field name="OP">LT</field>
@@ -24,14 +25,28 @@
           </block>
         </value>
         <statement name="DO0">
-          <block type="led_select" id="268" inline="true">
-            <field name="ACTION">FLASH</field>
-            <value name="LED">
-              <block type="math_number" id="281">
-                <field name="NUM">5</field>
+          <block type="movement_right" id="459"></block>
+        </statement>
+        <value name="IF1">
+          <block type="logic_compare" id="445" inline="true">
+            <field name="OP">LT</field>
+            <value name="A">
+              <block type="sensor_object" id="446">
+                <field name="OBJECT">RIGHTFRONT</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="math_number" id="447">
+                <field name="NUM">75</field>
               </block>
             </value>
           </block>
+        </value>
+        <statement name="DO1">
+          <block type="movement_left" id="469"></block>
+        </statement>
+        <statement name="ELSE">
+          <block type="movement_forward" id="485"></block>
         </statement>
         <next>
           <block type="robot_delay" id="208" inline="true">
@@ -44,6 +59,9 @@
         </next>
       </block>
     </statement>
+    <next>
+      <block type="movement_stop" id="305"></block>
+    </next>
   </block>
   <block type="movement_forward" id="206" x="509" y="558"></block>
 </xml>
