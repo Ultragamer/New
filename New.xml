@@ -2,7 +2,7 @@
   <block type="oled_cleardisplay" id="15" x="136" y="70">
     <next>
       <block type="oled_drawtext" id="57">
-        <field name="TEXT">hi my name is kevin</field>
+        <field name="TEXT">66</field>
       </block>
     </next>
   </block>
