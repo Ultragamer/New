@@ -80,7 +80,11 @@
       </block>
     </statement>
     <next>
-      <block type="movement_stop" id="305"></block>
+      <block type="movement_right" id="513">
+        <next>
+          <block type="movement_stop" id="305"></block>
+        </next>
+      </block>
     </next>
   </block>
 </xml>
