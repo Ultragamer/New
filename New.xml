@@ -1,9 +1,14 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="oled_cleardisplay" id="15" x="136" y="70">
-    <next>
-      <block type="oled_drawtext" id="57">
-        <field name="TEXT">66</field>
+  <block type="movement_setmotors" id="250" inline="true" x="-83" y="164">
+    <value name="BOTHMOVLEFT">
+      <block type="sensor_button" id="233">
+        <field name="OBJECT">UP</field>
       </block>
-    </next>
+    </value>
+    <value name="BOTHMOVRIGHT">
+      <block type="sensor_button" id="240">
+        <field name="OBJECT">UP</field>
+      </block>
+    </value>
   </block>
 </xml>
